@@ -1,0 +1,90 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingActivity">
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="25dp"
+        android:text="Name"
+        android:textSize="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textModel"
+        app:layout_constraintEnd_toStartOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/lavender_border"
+        android:textColor="@color/white"
+        android:padding="4dp"
+        android:hint="Name"
+        tools:layout_editor_absoluteX="128dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <TextView
+        android:id="@+id/textModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VehicleModel"
+        android:textColor="@color/white"
+        android:textSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editModel"
+        app:layout_constraintEnd_toStartOf="@+id/editModel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <EditText
+        android:id="@+id/editModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/lavender_border"
+        android:ems="10"
+        android:hint="Model"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        tools:layout_editor_absoluteX="128dp" />
+
+    <TextView
+        android:id="@+id/plateNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="License Plate Number"
+        android:textSize="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_plateNo"
+        app:layout_constraintEnd_toStartOf="@+id/edit_plateNo"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textModel"
+        app:layout_constraintVertical_bias="1.0" />
+
+     <EditText
+        android:id="@+id/edit_plateNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/lavender_border"
+        android:ems="10"
+        android:hint="plate Number"
+        android:inputType="text"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/editModel"
+        tools:layout_editor_absoluteX="128dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
